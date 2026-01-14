@@ -1,4 +1,4 @@
-const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbztkg1o3gWPS--E4PsQpSEsPxLfY7QQootIAVBCAOmuQHVzV83HBveq9cSH3z9tYn0PnA/exec"; // Pega tu URL de Web App aquí
+const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxSr6f8IG72MNmviiDLpPmy2HvdsJvFhdKG4MDPARv4U1_1GhW21h8aQJOmUQmQrtqyoQ/exec"; // Pega tu URL de Web App aquí
 
 let modo = "entrada";
 
