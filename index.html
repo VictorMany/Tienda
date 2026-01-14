@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventario Tienda</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>📦 Inventario</h1>
+
+    <!-- Pantalla Registro -->
+    <div id="pantallaRegistro" class="card">
+      <div class="tabs">
+        <div class="tab active" onclick="setModo('entrada', this)">📥 Entrada</div>
+        <div class="tab" onclick="setModo('salida', this)">📤 Salida</div>
+      </div>
+
+      <select id="usuario">
+        <option>Caja</option>
+        <option>Bodega</option>
+      </select>
+
+      <input id="producto" placeholder="Producto">
+      <input id="cantidad" type="number" placeholder="Cantidad">
+
+      <button id="btnGuardar" class="entrada" onclick="guardar()">Guardar</button>
+      <div class="msg" id="msg"></div>
+      <button class="link" onclick="irMovimientos()">📊 Ver movimientos</button>
+    </div>
+
+    <!-- Pantalla Movimientos -->
+    <div id="pantallaMovimientos" class="card" style="display:none">
+      <div class="tabs">
+        <div class="tab active" onclick="verTabla('entrada', this)">📥 Entradas</div>
+        <div class="tab" onclick="verTabla('salida', this)">📤 Salidas</div>
+      </div>
+      <div id="tabla">
+        <div style="padding:20px;text-align:center">
+          <div class="loader" style="border-top-color:#2563eb"></div>
+        </div>
+      </div>
+      <button class="link" onclick="irRegistro()">⬅️ Volver al registro</button>
+    </div>
+  </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

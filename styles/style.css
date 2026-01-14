@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin:0; padding:20px; font-family: system-ui,-apple-system; background:#f5f7fb; color:#374151; font-size:clamp(14px,2vw,18px); -webkit-tap-highlight-color:transparent; height:100vh;}
+.app { width:100%; max-width:100%; min-width:320px; margin:0 auto; padding:0 12px;}
+@media (min-width:900px) { .app { max-width:420px; } }
+h1 { text-align:center; font-size:clamp(20px,4vw,22px); margin-bottom:20px; }
+.tabs { display:flex; background:#e5e7eb; padding:4px; border-radius:16px; margin-bottom:20px; }
+.tab { flex:1; text-align:center; padding:clamp(10px,2vw,12px); border-radius:12px; font-weight:500; cursor:pointer; transition:.2s; }
+.tab.active { background:white; box-shadow:0 6px 14px rgba(0,0,0,.08); }
+.card { background:white; padding:clamp(16px,4vw,20px); border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.08); }
+select,input { width:100%; padding:clamp(12px,3vw,14px); margin-top:12px; border-radius:14px; border:1px solid #d1d5db; font-size:clamp(14px,2.5vw,16px); }
+select:disabled,input:disabled { background:#f3f4f6; }
+button { width:100%; padding:clamp(14px,4vw,16px); margin-top:20px; border-radius:16px; border:none; font-size:clamp(16px,4vw,18px); font-weight:600; cursor:pointer; position:relative; }
+button:disabled { opacity:.7; cursor:not-allowed; }
+.entrada { background:#86efac; color:#065f46; }
+.salida { background:#fca5a5; color:#7f1d1d; }
+.msg { margin-top:16px; text-align:center; font-weight:500; }
+.loader { width:22px; height:22px; border:3px solid rgba(255,255,255,.4); border-top:3px solid white; border-radius:50%; animation:spin 1s linear infinite; margin:auto; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.link { background:transparent; color:#2563eb; font-weight:500; margin-top:18px; padding:10px; }
+.table { border-radius:14px; overflow:hidden; border:1px solid #e5e7eb; margin-top:10px; }
+.row { display:flex; padding:10px; font-size:clamp(12px,2.5vw,14px); border-bottom:1px solid #f1f5f9; }
+.row.header { background:#f1f5f9; font-weight:600; }
+.cell { flex:1; }
+.cell.small { flex:.6; text-align:right; }
